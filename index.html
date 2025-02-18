@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Cricket</title>
+    <style>
+        body {
+            padding: 50px 90px;
+            width: 84%;
+            justify-content: center;
+        }
+     .field {
+   width: 90%;
+  height: 450px;
+  justify-content: center;
+  margin: 0 auto;
+  border: 5px solid green;
+  background-color: bisque;
+  background-image: url(images/back.png);
+        }
+        .field img {
+            transform: rotate(0deg);
+            transform-origin: top right;
+        }
+        .bat {
+            width: 270px;
+        }
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transition: transform 1s  ease-in ; 
+        }
+        .ball {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 372px;
+        }
+        .field:hover .ball {
+            transform: translate(540px, -150px) rotate(2500deg);
+    transition-duration: 5s;
+    transition-delay: 0.9s;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/bat (1).png" alt=""/>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
